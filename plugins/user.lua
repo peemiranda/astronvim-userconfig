@@ -9,4 +9,8 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "maxmx03/solarized.nvim",
+    opts = { transparent = true }
+  }
 }
