@@ -1,3 +1,17 @@
 return { -- this table overrides highlights in all themes
-  -- Normal = { bg = "#000000" },
+  Normal = { 
+    ctermbg = "none",
+  },
+
+  NonText = {
+    ctermbg = "none",
+  },
+
+  NeoTreeNormal = {
+    ctermbg = "none"
+  },
+
+  VertSplit = {
+    ctermbg = "none"
+  }
 }

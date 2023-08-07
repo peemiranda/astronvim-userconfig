@@ -40,4 +40,7 @@ return {
     -- setting a mapping to false will disable it
     ["<esc>"] = { "<C-\\><C-n><cmd>:q<cr>", desc = "Close terminal" },
   },
+  i = {
+    ["<C-s>"] = { "<esc>:w!<cr>", desc = "Save File" }
+  }
 }
