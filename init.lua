@@ -52,6 +52,18 @@ return {
     servers = {
       -- "pyright"
     },
+
+    config = {
+      cssls = {
+        settings = {
+          css = {
+            lint = {
+              unknownAtRules = 'ignore'
+            }
+          }
+        }
+      }
+    }
   },
 
   -- Configure require("lazy").setup() options
