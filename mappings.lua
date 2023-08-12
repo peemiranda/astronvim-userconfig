@@ -37,8 +37,7 @@ return {
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   t = {
-    -- setting a mapping to false will disable it
-    ["<esc>"] = { "<C-\\><C-n><cmd>:q<cr>", desc = "Close terminal" },
+    ["<esc>"] = { "<C-\\><C-n>", desc = "Exit from terminal mode" },
   },
   i = {
     ["<C-s>"] = { "<esc>:w!<cr>", desc = "Save File" }
