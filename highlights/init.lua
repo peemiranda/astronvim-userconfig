@@ -15,4 +15,7 @@ return { -- this table overrides highlights in all themes
   Title = {
     ctermbg = "none"
   },
+  PmenuSel = {
+    bg = "#ffff00"
+  }
 }
