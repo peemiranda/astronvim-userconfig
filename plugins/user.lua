@@ -12,5 +12,5 @@ return {
   {
     "maxmx03/solarized.nvim",
     opts = { transparent = true }
-  }
+  },
 }
