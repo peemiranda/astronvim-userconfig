@@ -35,11 +35,24 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- Move line
+    ["<A-j>"] = { ":m .+1<cr>==", desc = "Move line down" },
+    ["<A-k>"] = { ":m .-2<cr>==", desc = "Move line up" }
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>", desc = "Exit from terminal mode" },
   },
   i = {
-    ["<C-s>"] = { "<esc>:w!<cr>", desc = "Save File" }
+    ["<C-s>"] = { "<esc>:w!<cr>", desc = "Save File" },
+    
+    -- move line
+    ["<A-j>"] = { "<esc>:m .+1<cr>==gi", desc = "Move line down" },
+    ["<A-k>"] = { "<esc>:m .-2<cr>==gi", desc = "Move line up" }
+  },
+  v = {
+    -- move line
+    ["<A-j>"] = { ":m .+1<cr>==gi", desc = "Move line down" },
+    ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move line up" }
   }
 }
