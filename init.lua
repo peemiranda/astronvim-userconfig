@@ -93,5 +93,6 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    -- vim.api.nvim_set_keymap('v', '(', 'j', { noremap = true })
   end,
 }

@@ -53,6 +53,9 @@ return {
   v = {
     -- move line
     ["<A-j>"] = { ":m .+1<cr>==gi", desc = "Move line down" },
-    ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move line up" }
+    ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move line up" },
+
+    -- Surrounding
+    ["("] = { "Sb", desc = "Surround selected with parentheses" }
   }
 }
