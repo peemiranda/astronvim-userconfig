@@ -15,6 +15,12 @@ return { -- this table overrides highlights in all themes
   Title = {
     ctermbg = "none"
   },
+  NormalFloat = {
+    ctermbg = "none"
+  },
+  FloatBorder = {
+    ctermbg = "none"
+  },
   PmenuSel = {
     bg = "#ffff00"
   }
