@@ -43,8 +43,9 @@ return {
     ["<A-k>"] = { ":m .-2<cr>==", desc = "Move line up" },
     ["<A-F>"] = {
       function()
-          vim.lsp.buf.format()
-      end
+         vim.lsp.buf.format()
+      end,
+      desc = "Format buffer"
     }
   },
   t = {
