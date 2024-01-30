@@ -14,12 +14,8 @@ return {
     event = "User AstroFile"
   },
   {
-    "karb94/neoscroll.nvim",
-    event = "User AstroFile",
-    opts = {
-      mappings = {'<C-u>', '<C-d>', '<C-b>', '<C-f>',
-                '<C-y>', '<C-e>', 'zt', 'zz', 'zb'}
-    }
+    "psliwka/vim-smoothie",
+    event = "User AstroFile"
   },
 
   -- Disabled plugins
