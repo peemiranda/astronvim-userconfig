@@ -1,4 +1,4 @@
-require("user.themes.andromeda")
+require("user.themes.vscode.andromeda")
 
 return {
   -- Configure AstroNvim updates
