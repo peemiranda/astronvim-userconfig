@@ -13,4 +13,8 @@ return {
     "maxmx03/solarized.nvim",
     opts = { transparent = true }
   },
+  {
+    "styled-components/vim-styled-components",
+    event = "User AstroFile"
+  }
 }
