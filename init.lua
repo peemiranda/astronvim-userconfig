@@ -1,3 +1,5 @@
+require("user.themes.andromeda")
+
 return {
   -- Configure AstroNvim updates
   updater = {
