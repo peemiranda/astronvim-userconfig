@@ -40,7 +40,12 @@ return {
 
     -- Move line
     ["<A-j>"] = { ":m .+1<cr>==", desc = "Move line down" },
-    ["<A-k>"] = { ":m .-2<cr>==", desc = "Move line up" }
+    ["<A-k>"] = { ":m .-2<cr>==", desc = "Move line up" },
+    ["<A-F>"] = {
+      function()
+          vim.lsp.buf.format()
+      end
+    }
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>", desc = "Exit from terminal mode" },
