@@ -23,5 +23,8 @@ return { -- this table overrides highlights in all themes
   },
   PmenuSel = {
     bg = "#ffff00"
+  },
+  FoldColumn = {
+    bg = "none"
   }
 }

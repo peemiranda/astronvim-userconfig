@@ -14,11 +14,11 @@ return {
       --   ["remote_name"] = "https://remote_url.come/repo.git", -- full remote url
       --   ["remote2"] = "github_user/repo", -- GitHub user/repo shortcut,
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
-    },
+    }, 
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "andromeda",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
