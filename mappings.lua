@@ -46,7 +46,8 @@ return {
          vim.lsp.buf.format()
       end,
       desc = "Format buffer"
-    }
+    },
+    ["<leader>P"] = { ":syntax sync fromstart<cr>", desc = "Sync syntax from start" },
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>", desc = "Exit from terminal mode" },
