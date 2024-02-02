@@ -1,4 +1,3 @@
-require("user.themes.vscode.andromeda")
 
 return {
   -- Configure AstroNvim updates
@@ -20,7 +19,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "andromeda",
+  colorscheme = "astrodark",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
