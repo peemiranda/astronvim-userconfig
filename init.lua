@@ -1,5 +1,4 @@
 require("user.themes.vscode.andromeda")
-require("user.dap")
 
 return {
   -- Configure AstroNvim updates
@@ -84,6 +83,6 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    
+    require("user.dap")
   end,
 }
