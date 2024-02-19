@@ -48,13 +48,20 @@ return {
       desc = "Format buffer"
     },
     ["<leader>P"] = { ":syntax sync fromstart<cr>", desc = "Sync syntax from start" },
+
+    -- Rest Client
+    ["<leader>R"] = {
+      function()
+        require('rest-nvim').run()
+      end,
+    }
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>", desc = "Exit from terminal mode" },
   },
   i = {
     ["<C-s>"] = { "<esc>:w!<cr>", desc = "Save File" },
-    
+
     -- move line
     ["<A-j>"] = { "<esc>:m .+1<cr>==gi", desc = "Move line down" },
     ["<A-k>"] = { "<esc>:m .-2<cr>==gi", desc = "Move line up" }
