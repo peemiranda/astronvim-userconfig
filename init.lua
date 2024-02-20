@@ -100,5 +100,7 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     require("user.dap")
+    local transparent = require("transparent")
+    transparent.clear_prefix('NeoTree')
   end,
 }
