@@ -14,7 +14,7 @@ return {
       --   ["remote_name"] = "https://remote_url.come/repo.git", -- full remote url
       --   ["remote2"] = "github_user/repo", -- GitHub user/repo shortcut,
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
-    }, 
+    },
   },
 
   -- Set colorscheme to use
@@ -99,8 +99,9 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    require("user.dap")
-    local transparent = require("transparent")
-    transparent.clear_prefix('NeoTree')
+    require("user.config.dap_config")
+    -- Transparency
+    -- local transparent = require("transparent")
+    -- transparent.clear_prefix('NeoTree')
   end,
 }

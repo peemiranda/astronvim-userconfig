@@ -23,6 +23,8 @@ return {
       desc = "Previous buffer",
     },
 
+    ["<cr>"] = { "zz", desc = "Centralize screen" },
+
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
