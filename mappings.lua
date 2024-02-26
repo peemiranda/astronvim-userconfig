@@ -56,7 +56,8 @@ return {
       function()
         require('rest-nvim').run()
       end,
-    }
+    },
+
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>", desc = "Exit from terminal mode" },
@@ -66,7 +67,14 @@ return {
 
     -- move line
     ["<A-j>"] = { "<esc>:m .+1<cr>==gi", desc = "Move line down" },
-    ["<A-k>"] = { "<esc>:m .-2<cr>==gi", desc = "Move line up" }
+    ["<A-k>"] = { "<esc>:m .-2<cr>==gi", desc = "Move line up" },
+
+    ["<C-Space>"] = {
+      function()
+        vim.lsp.buf.hover()
+      end,
+      desc = "Show lsp options"
+    }
   },
   v = {
     -- move line
