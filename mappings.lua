@@ -9,7 +9,11 @@ return {
     ["<leader>s"] = { ":tabe ~/.config/nvim/lua/user<cr>", desc = "Open Astronvim Config Folder" },
 
     ["<C-p>"] = {
-      function() require("telescope.builtin").find_files { hidden = true, no_ignore = true } end,
+      function() require("telescope.builtin").find_files { 
+        hidden = true, 
+        no_ignore = true,
+        ignore_file_patterns = { "node%_modules/*" }
+      } end,
       desc = "Find all files",
     },    
     -- second key is the lefthand side of the map
