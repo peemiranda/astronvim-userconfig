@@ -62,6 +62,13 @@ return {
       end,
     },
 
+    ["<leader>a"] = {
+      function()
+        vim.lsp.buf.code_action()
+      end,
+      desc = "Run LSP code actions"
+    }
+
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>", desc = "Exit from terminal mode" },
