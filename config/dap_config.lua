@@ -8,14 +8,14 @@ dap.adapters.php = {
 }
 
 -- Do not forget to run 'npm install' and 'npm run build' inside the adapters/vscode-php-debug folder
-dap.configurations.php = {
-  {
-    type = 'php',
-    request = 'launch',
-    name = 'Listen for Xdebug',
-    port = 9003,
-    pathMappings = {
-        ['/var/www/html'] = "${workspaceFolder}"
-    },
-  }
-}
+-- dap.configurations.php = {
+--   {
+--     type = 'php',
+--     request = 'launch',
+--     name = 'Listen for Xdebug',
+--     port = 9003,
+--     pathMappings = {
+--         ['/var/www/html'] = "${workspaceFolder}"
+--     },
+--   }
+-- }
