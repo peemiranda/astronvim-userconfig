@@ -100,6 +100,16 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     require("user.config.dap_config")
+    vim.opt.clipboard = "unnamedplus"
+
+    if vim.fn.has('wsl') == 1 then
+      vim.api.nvim_create_autocmd('TextYankPost', {
+        group = vim.api.nvim_create_augroup('Yank', { clear = true }),
+        callback = function()
+          vim.fn.system('clip.exe', vim.fn.getreg('"'))
+        end,
+      })
+    end
     -- Transparency
     -- local transparent = require("transparent")
     -- transparent.clear_prefix('NeoTree')
